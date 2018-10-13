@@ -86,7 +86,7 @@
                 {"signal": "grid_Miles_per_Gallon"},
                 {"signal": "grid_Horsepower"}
               ],
-              "update": "grid_Miles_per_Gallon && grid_Horsepower ? {unit: \"child_Horsepower_Miles_per_Gallon\", fields: grid_tuple_fields, values: [grid_Miles_per_Gallon, grid_Horsepower]} : null"
+              "update": "grid_Miles_per_Gallon && grid_Horsepower ? {unit: \"child_Horsepower_Miles_per_Gallon\", fields: grid_tuple_fields, values: [grid_Miles_per_Gallon,grid_Horsepower]} : null"
             }
           ]
         },
@@ -145,12 +145,7 @@
         },
         {
           "name": "grid_modify",
-          "on": [
-            {
-              "events": {"signal": "grid_tuple"},
-              "update": "modify(\"grid_store\", grid_tuple, true)"
-            }
-          ]
+          "update": "modify(\"grid_store\", grid_tuple, true)"
         }
       ],
       "marks": [
@@ -284,7 +279,7 @@
                 {"signal": "grid_Acceleration"},
                 {"signal": "grid_Horsepower"}
               ],
-              "update": "grid_Acceleration && grid_Horsepower ? {unit: \"child_Horsepower_Acceleration\", fields: grid_tuple_fields, values: [grid_Acceleration, grid_Horsepower]} : null"
+              "update": "grid_Acceleration && grid_Horsepower ? {unit: \"child_Horsepower_Acceleration\", fields: grid_tuple_fields, values: [grid_Acceleration,grid_Horsepower]} : null"
             }
           ]
         },
@@ -343,12 +338,7 @@
         },
         {
           "name": "grid_modify",
-          "on": [
-            {
-              "events": {"signal": "grid_tuple"},
-              "update": "modify(\"grid_store\", grid_tuple, true)"
-            }
-          ]
+          "update": "modify(\"grid_store\", grid_tuple, true)"
         }
       ],
       "marks": [
@@ -524,12 +514,7 @@
         },
         {
           "name": "grid_modify",
-          "on": [
-            {
-              "events": {"signal": "grid_tuple"},
-              "update": "modify(\"grid_store\", grid_tuple, true)"
-            }
-          ]
+          "update": "modify(\"grid_store\", grid_tuple, true)"
         }
       ],
       "marks": [
@@ -663,7 +648,7 @@
                 {"signal": "grid_Miles_per_Gallon"},
                 {"signal": "grid_Acceleration"}
               ],
-              "update": "grid_Miles_per_Gallon && grid_Acceleration ? {unit: \"child_Acceleration_Miles_per_Gallon\", fields: grid_tuple_fields, values: [grid_Miles_per_Gallon, grid_Acceleration]} : null"
+              "update": "grid_Miles_per_Gallon && grid_Acceleration ? {unit: \"child_Acceleration_Miles_per_Gallon\", fields: grid_tuple_fields, values: [grid_Miles_per_Gallon,grid_Acceleration]} : null"
             }
           ]
         },
@@ -722,12 +707,7 @@
         },
         {
           "name": "grid_modify",
-          "on": [
-            {
-              "events": {"signal": "grid_tuple"},
-              "update": "modify(\"grid_store\", grid_tuple, true)"
-            }
-          ]
+          "update": "modify(\"grid_store\", grid_tuple, true)"
         }
       ],
       "marks": [
@@ -903,12 +883,7 @@
         },
         {
           "name": "grid_modify",
-          "on": [
-            {
-              "events": {"signal": "grid_tuple"},
-              "update": "modify(\"grid_store\", grid_tuple, true)"
-            }
-          ]
+          "update": "modify(\"grid_store\", grid_tuple, true)"
         }
       ],
       "marks": [
@@ -1042,7 +1017,7 @@
                 {"signal": "grid_Horsepower"},
                 {"signal": "grid_Acceleration"}
               ],
-              "update": "grid_Horsepower && grid_Acceleration ? {unit: \"child_Acceleration_Horsepower\", fields: grid_tuple_fields, values: [grid_Horsepower, grid_Acceleration]} : null"
+              "update": "grid_Horsepower && grid_Acceleration ? {unit: \"child_Acceleration_Horsepower\", fields: grid_tuple_fields, values: [grid_Horsepower,grid_Acceleration]} : null"
             }
           ]
         },
@@ -1101,12 +1076,7 @@
         },
         {
           "name": "grid_modify",
-          "on": [
-            {
-              "events": {"signal": "grid_tuple"},
-              "update": "modify(\"grid_store\", grid_tuple, true)"
-            }
-          ]
+          "update": "modify(\"grid_store\", grid_tuple, true)"
         }
       ],
       "marks": [
@@ -1282,12 +1252,7 @@
         },
         {
           "name": "grid_modify",
-          "on": [
-            {
-              "events": {"signal": "grid_tuple"},
-              "update": "modify(\"grid_store\", grid_tuple, true)"
-            }
-          ]
+          "update": "modify(\"grid_store\", grid_tuple, true)"
         }
       ],
       "marks": [
@@ -1421,7 +1386,7 @@
                 {"signal": "grid_Acceleration"},
                 {"signal": "grid_Miles_per_Gallon"}
               ],
-              "update": "grid_Acceleration && grid_Miles_per_Gallon ? {unit: \"child_Miles_per_Gallon_Acceleration\", fields: grid_tuple_fields, values: [grid_Acceleration, grid_Miles_per_Gallon]} : null"
+              "update": "grid_Acceleration && grid_Miles_per_Gallon ? {unit: \"child_Miles_per_Gallon_Acceleration\", fields: grid_tuple_fields, values: [grid_Acceleration,grid_Miles_per_Gallon]} : null"
             }
           ]
         },
@@ -1480,12 +1445,7 @@
         },
         {
           "name": "grid_modify",
-          "on": [
-            {
-              "events": {"signal": "grid_tuple"},
-              "update": "modify(\"grid_store\", grid_tuple, true)"
-            }
-          ]
+          "update": "modify(\"grid_store\", grid_tuple, true)"
         }
       ],
       "marks": [
@@ -1619,7 +1579,7 @@
                 {"signal": "grid_Horsepower"},
                 {"signal": "grid_Miles_per_Gallon"}
               ],
-              "update": "grid_Horsepower && grid_Miles_per_Gallon ? {unit: \"child_Miles_per_Gallon_Horsepower\", fields: grid_tuple_fields, values: [grid_Horsepower, grid_Miles_per_Gallon]} : null"
+              "update": "grid_Horsepower && grid_Miles_per_Gallon ? {unit: \"child_Miles_per_Gallon_Horsepower\", fields: grid_tuple_fields, values: [grid_Horsepower,grid_Miles_per_Gallon]} : null"
             }
           ]
         },
@@ -1678,12 +1638,7 @@
         },
         {
           "name": "grid_modify",
-          "on": [
-            {
-              "events": {"signal": "grid_tuple"},
-              "update": "modify(\"grid_store\", grid_tuple, true)"
-            }
-          ]
+          "update": "modify(\"grid_store\", grid_tuple, true)"
         }
       ],
       "marks": [
